@@ -83,11 +83,6 @@ NeoBundle 'aaronjensen/vim-recentcomplete'
 NeoBundle 'Shougo/neocomplete.vim'
 inoremap <CR> <C-g>u<C-r>=pumvisible()?"\C-y":""<CR><CR>
 
-NeoBundle '907th/vim-auto-save'
-let g:auto_save = 1
-let g:auto_save_silent = 1
-let g:auto_save_in_insert_mode = 0
-
 NeoBundle 'itchyny/lightline.vim'
 let g:lightline = {
       \ 'colorscheme': 'solarized',
