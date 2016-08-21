@@ -48,7 +48,6 @@ Plugin 'ap/vim-css-color'
 Plugin 'Keithbsmiley/rspec.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'digitaltoad/vim-jade'
-Plugin 'derekwyatt/vim-scala'
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-markdown'
@@ -60,6 +59,9 @@ Plugin 'AndrewRadev/splitjoin.vim'
 
 Plugin 'elzr/vim-json'
 let g:vim_json_syntax_conceal = 0
+
+Plugin 'derekwyatt/vim-scala'
+autocmd BufRead,BufNewFile *.scala set filetype=scala
 
 " Other random settings
 let g:rehash256 = 1
