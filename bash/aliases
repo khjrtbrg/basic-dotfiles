@@ -5,6 +5,13 @@ alias ..='cd ..'
 
 alias ssh='TERM=xterm-256color ssh'
 
+alias gs='git status'
+alias gco='git checkout'
+alias gf='git fetch -p'
+alias gp='git pull'
+alias gross='git checkout .'
+alias wip='git commit -am "WIP"'
+
 function current_branch {
   branch_name="$(git rev-parse --symbolic-full-name --abbrev-ref HEAD 2>/dev/null)" ||
     branch_name="(unnamed branch)"     # detached HEAD
