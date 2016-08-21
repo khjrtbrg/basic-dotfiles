@@ -35,7 +35,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized-dark'
+let g:airline_theme='dark'
 
 " Indentation & Syntax
 Plugin 'tpope/vim-endwise'
