@@ -30,11 +30,5 @@ do
   ln -v -s "$F/$P" "$HOME/.$P"
 done
 
-# install macvim
-brew install macvim --with-cscope --with-luajit
-
-# install neobundle
-curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
-
-# install powerline fonts
-git clone git@github.com:powerline/fonts.git ~/powerline-fonts && ~/powerline-fonts/install.sh
+# install vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

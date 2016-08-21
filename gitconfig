@@ -1,5 +1,5 @@
 [user]
-  email = kristina.hjertberg@socrata.com
+  email = hjert.k@gmail.com
   name = Kristina Hjertberg
 
 [core]
@@ -13,6 +13,7 @@
   st = status
   br = branch
   hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  last = hist -n 
   type = cat-file -t
   dump = cat-file -p
 

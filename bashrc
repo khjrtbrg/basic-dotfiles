@@ -1,8 +1,8 @@
 source ~/.bash/colors
 source ~/.bash/aliases
 
-export EDITOR='mvim -v'
-export VISUAL='mvim -v'
+export EDITOR='vim'
+export VISUAL='vim'
 
 export BASH_ENV='~/.bash/env'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
