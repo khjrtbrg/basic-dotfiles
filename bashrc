@@ -1,6 +1,5 @@
 source ~/.bash/colors
 source ~/.bash/aliases
-source ~/.bash/git-completion.bash
 
 export EDITOR='vim'
 export VISUAL='vim'

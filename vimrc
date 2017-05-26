@@ -60,9 +60,6 @@ Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'elzr/vim-json'
 let g:vim_json_syntax_conceal = 0
 
-Plugin 'derekwyatt/vim-scala'
-autocmd BufRead,BufNewFile *.scala set filetype=scala
-
 " Other random settings
 let g:rehash256 = 1
 let g:molokai_original = 1
