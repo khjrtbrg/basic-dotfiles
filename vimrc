@@ -39,26 +39,22 @@ let g:airline_theme='dark'
 
 " Indentation & Syntax
 Plugin 'tpope/vim-endwise'
-Plugin 'utix/vim-javascript', 'develop'
 Plugin 'conormcd/matchindent.vim'
+Plugin 'godlygeek/tabular'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
 Plugin 'ap/vim-css-color'
 Plugin 'Keithbsmiley/rspec.vim'
 Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'digitaltoad/vim-jade'
 Plugin 'tpope/vim-git'
-Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-markdown'
-Plugin 'itspriddle/vim-jquery'
-Plugin 'mutewinter/nginx.vim'
-Plugin 'jeyb/vim-jst'
-Plugin 'godlygeek/tabular'
-Plugin 'AndrewRadev/splitjoin.vim'
 
-Plugin 'elzr/vim-json'
-let g:vim_json_syntax_conceal = 0
+Plugin 'pangloss/vim-javascript'
+let g:javascript_plugin_flow = 1
+
+Plugin 'mxw/vim-jsx'
+let g:jsx_ext_required = 0
 
 " Other random settings
 let g:rehash256 = 1
@@ -130,7 +126,6 @@ set undolevels=1000
 set undoreload=10000
 
 let g:expandWindows = 1
-let g:disableArrowKeys = 1
 
 
 """""""""""""""""""

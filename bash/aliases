@@ -1,27 +1,6 @@
 #!/bin/bash
 
 alias ll='ls -Al'
-alias ..='cd ..'
+alias k='clear'
 
 alias ssh='TERM=xterm-256color ssh'
-
-alias gs='git status'
-alias gco='git checkout'
-alias gf='git fetch -p'
-alias gp='git pull'
-alias gross='git checkout .'
-alias wip='git commit -am "WIP"'
-
-function current_branch {
-  branch_name="$(git rev-parse --symbolic-full-name --abbrev-ref HEAD 2>/dev/null)" ||
-    branch_name="(unnamed branch)"     # detached HEAD
-
-  echo $branch_name
-}
-
-function current_tracking_branch {
-  branch_name="$(git rev-parse --symbolic-full-name --abbrev-ref HEAD@{u} 2>/dev/null)" ||
-    branch_name=""
-
-  echo $branch_name
-}

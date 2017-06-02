@@ -40,8 +40,7 @@ else
 fi
 
 # install a couple of brew packages
-brew install git
-brew install git-completion
+brew install the_silver_searcher
 brew install autojump
 
 # install vundle
@@ -58,7 +57,8 @@ fi
 echo "
 Set up is mostly complete! To finish up:
 
-1. Pick the terminal theme you'd like and set it as default.
+1. Pick a terminal theme and set it as default.
 2. Turn off marks in terminal: View > Hide Marks.
-3. Remember to generate and add ssh keys: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+3. Finish setting up vim: open a session and type :PluginInstall
+4. Remember to generate and add ssh keys: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 "
