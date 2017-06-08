@@ -1,6 +1,5 @@
-[user]
-  email = hjert.k@gmail.com
-  name = Kristina Hjertberg
+[include]
+  path = ~/.gitconfig_private
 
 [core]
   autocrlf = false

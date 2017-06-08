@@ -31,6 +31,19 @@ do
   ln -v -s "$F/$P" "$HOME/.$P"
 done
 
+# set up gitconfig_private
+echo "Enter an email for git: "
+read git_email
+
+echo "Enter a name for git: "
+read git_name
+
+echo "
+[user]
+  email = $git_email
+  name = $git_name
+" > ~/.gitconfig_private
+
 # install brew
 which -s brew
 if [[ $? != 0 ]] ; then
