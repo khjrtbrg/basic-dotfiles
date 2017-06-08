@@ -29,7 +29,7 @@ function git_status() {
 
   [[ -n $(git log --branches --not --remotes 2>/dev/null) ]] && output="${output}^"
 
-  echo $output
+  echo "$output" # needs to be quoted to not evaluate the symbols
 }
 
 function git_prompt() {
@@ -40,7 +40,7 @@ function git_prompt() {
   [[ -n $branch ]] && output="$output $branch"
   [[ -n $status ]] && output="$output $status"
 
-  echo "$output" # needs the quotes for whitespace
+  echo "$output" # needs the quotes to preserve whitespace
 }
 
 PS1="${COLOR_MAGENTA}[${COLOR_CYAN}\W${COLOR_GREEN}\$(git_prompt)${COLOR_MAGENTA}]${COLOR_NONE}\$ "
