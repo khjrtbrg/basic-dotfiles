@@ -2,9 +2,6 @@ function! <SID>StripTrailingWhitespaces()
   " Save last search and cursor position
   let reg = getreg('/')
   let pos = getpos('.')
-  " Join to the previous command so we don't get into
-  " an undo loop with auto save
-  silent! undojoin
 
   execute '%s/\s\+$//e'
 
