@@ -17,6 +17,7 @@
   type = cat-file -t
   dump = cat-file -p
   undo = reset --soft HEAD~1
+  files = diff --name-status
 
 [color]
   diff = auto

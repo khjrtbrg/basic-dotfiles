@@ -55,6 +55,10 @@ fi
 # install a couple of brew packages
 brew install the_silver_searcher
 brew install autojump
+brew install tree
+brew install jq
+brew install node
+brew install tmux
 
 # install vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

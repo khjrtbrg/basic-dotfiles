@@ -125,6 +125,8 @@ set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
 
+set colorcolumn=90
+
 let g:expandWindows = 1
 
 
