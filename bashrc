@@ -1,5 +1,6 @@
 source ~/.bash/colors
 source ~/.bash/aliases
+source ~/.bash/git-completion.bash
 
 export EDITOR='vim'
 export VISUAL='vim'
@@ -27,8 +28,6 @@ function git_status() {
   [[ -n $(egrep '^.[MD]' <<<"$status") ]] && output="$output*"
   [[ -n $(egrep '^\?\?' <<<"$status") ]] && output="$output?"
 
-  [[ -n $(git log --branches --not --remotes 2>/dev/null) ]] && output="${output}^"
-
   echo "$output" # needs to be quoted to not evaluate the symbols
 }
 
@@ -43,4 +42,4 @@ function git_prompt() {
   echo "$output" # needs the quotes to preserve whitespace
 }
 
-PS1="${COLOR_MAGENTA}[${COLOR_CYAN}\W${COLOR_GREEN}\$(git_prompt)${COLOR_MAGENTA}]${COLOR_NONE}\$ "
+PS1="${COLOR_YELLOW}\D{%T} ${COLOR_MAGENTA}[${COLOR_CYAN}\W${COLOR_GREEN}\$(git_prompt)${COLOR_MAGENTA}]${COLOR_NONE}\$ "

@@ -42,7 +42,7 @@ echo "
 [user]
   email = $git_email
   name = $git_name
-" > ~/.gitconfig_private
+" > $HOME/gitconfig_private
 
 # install brew
 which -s brew
@@ -61,15 +61,18 @@ brew install node
 brew install tmux
 
 # install vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 
 # install fonts
 if [ -h "$HOME/dotfiles/vim/fonts" ]; then
   continue;
 else
-  git clone https://github.com/powerline/fonts.git $HOME/dotfiles/vim/fonts
-  $HOME/dotfiles/vim/fonts/install.sh
+  git clone https://github.com/powerline/fonts.git $HOME/.vim/fonts
+  $HOME/.vim/fonts/install.sh
 fi
+
+# install git completion
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > $HOME/.bash/git-completion.bash
 
 echo "
 Set up is mostly complete! To finish up:

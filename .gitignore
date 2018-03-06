@@ -1,6 +1,8 @@
 bundle
 .netrwhist
+.netrwbook
 backup
 undo
 *.pyc
 vim/fonts
+git-completion.bash
