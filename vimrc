@@ -15,7 +15,11 @@ Plugin 'VundleVim/Vundle.vim'
 """"""""""""
 " Settings "
 """"""""""""
-let mapleader = ","
+let mapleader = " "
+let g:mapleader = " "
+
+" Fast saving
+nmap <leader>w :w!<cr>
 
 " Nice things to have
 Plugin 'tomtom/tcomment_vim'
@@ -131,6 +135,9 @@ set undolevels=1000
 set undoreload=10000
 
 set colorcolumn=90
+
+" set to audo read when a file is changed from outside
+set autoread
 
 let g:expandWindows = 1
 
