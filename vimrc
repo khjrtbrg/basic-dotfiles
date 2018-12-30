@@ -58,6 +58,7 @@ Plugin 'tpope/vim-markdown'
 Plugin 'w0rp/ale'
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
+let g:ale_fixers = {'python': ['isort']}
 
 Plugin 'pangloss/vim-javascript'
 let g:javascript_plugin_flow = 1
