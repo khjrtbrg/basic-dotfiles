@@ -39,7 +39,6 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='dark'
 
 " Indentation & Syntax
-Plugin 'tpope/vim-endwise'
 Plugin 'conormcd/matchindent.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'ap/vim-css-color'
