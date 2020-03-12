@@ -15,18 +15,15 @@ Plugin 'VundleVim/Vundle.vim'
 """"""""""""
 " Settings "
 """"""""""""
-let mapleader = " "
-let g:mapleader = " "
 
-" Fast saving
-nmap <leader>w :w!<cr>
+" When you're missing an escape key
+imap jj <Esc>
 
 " Nice things to have
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-rsi'
 
 Plugin 'tpope/vim-vinegar'
-autocmd FileType netrw map <buffer> <leader>w :bwipeout<cr>
 
 Plugin 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
@@ -63,8 +60,8 @@ let g:ale_fixers = {'python': ['isort']}
 Plugin 'pangloss/vim-javascript'
 let g:javascript_plugin_flow = 1
 
-Plugin 'mxw/vim-jsx'
-let g:jsx_ext_required = 0
+Plugin 'maxmellon/vim-jsx-pretty'
+let g:vim_jsx_pretty_colorful_config = 1
 
 " Other random settings
 let g:rehash256 = 1
