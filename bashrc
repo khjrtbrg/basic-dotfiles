@@ -47,3 +47,9 @@ PS1="${COLOR_YELLOW}\D{%T} ${COLOR_MAGENTA}[${COLOR_CYAN}\W${COLOR_GREEN}\$(git_
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# silence zsh warnings
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# vim mode in shell
+set -o vi
