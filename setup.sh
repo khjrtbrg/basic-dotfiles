@@ -57,6 +57,7 @@ brew install the_silver_searcher
 brew install autojump
 brew install tree
 brew install jq
+brew cask install sublime-text
 
 # install nvm
 echo "Installing nvm..."
@@ -74,6 +75,10 @@ else
   git clone https://github.com/powerline/fonts.git $HOME/.vim/fonts
   $HOME/.vim/fonts/install.sh
 fi
+
+# set up subl command
+echo "Linking subl command"
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
 echo "
 Set up is mostly complete! To finish up:
