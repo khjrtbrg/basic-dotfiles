@@ -84,7 +84,7 @@ echo "
 Set up is mostly complete! To finish up:
 
 1. Pick a terminal theme and set it as default.
-2. Add `nvm.sh --no-use` to wherever it was set up to avoid lag
-3. Finish setting up vim: open a session and type :PluginInstall
+2. Add 'nvm.sh --no-use' to wherever it was set up to avoid lag
+3. Finish setting up with :PluginInstall
 4. Remember to generate and add ssh keys: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 "
