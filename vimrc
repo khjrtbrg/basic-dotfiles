@@ -21,8 +21,8 @@ imap jj <Esc>
 
 " Nice things to have
 Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-rsi'
 
+Plugin 'tpope/vim-rsi'
 Plugin 'tpope/vim-vinegar'
 
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -42,8 +42,6 @@ let g:airline_theme='dark'
 Plugin 'conormcd/matchindent.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'ap/vim-css-color'
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-markdown'
 
 " linting

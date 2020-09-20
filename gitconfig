@@ -4,21 +4,15 @@
 [core]
   autocrlf = false
   safecrlf = true
-  excludesfile = /Users/kristinahjertberg/.gitignore_global
+  excludesfile = /Users/khjertberg/.gitignore_global
 	ignorecase = false
 
 [alias]
   co = checkout
   ap = add -p
-  ci = commit
-  st = status
-  br = branch
   hist = log --pretty=format:'%C(auto)%h %ad | %s%d [%C(cyan)%an%C(reset)]' --graph --date=short
   last = log --pretty=format:'%C(auto)%h %ad | %s%d [%C(cyan)%an%C(reset)]' --graph --date=short -n
-  type = cat-file -t
-  dump = cat-file -p
   undo = reset --soft HEAD~1
-  files = diff --name-status
 
 [color]
   diff = auto
